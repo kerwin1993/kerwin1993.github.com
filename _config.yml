@@ -1,22 +1,24 @@
 # Site settings
-title: Kerwin's Blog
-SEOTitle: 你的博客 | Kerwin's Blog
+title: Kerwin Blog
+SEOTitle: 李凯的博客 | Kerwin Blog
 header-img: img/home-bg.jpg
-email: kerwinli93@163.com
-description: ""
-keyword: ""
+email: huxpro@gmail.com
+description: "关于前端与设计、黑客与画家 | 李凯，Web & Mobile Lover，Software Engineer，UX Designer | 这里是 @Kerwin李凯 的个人博客，与你一起发现更大的世界。"
+keyword: "李凯, Kerwin李凯, Kerwin, 鬼栈, huxpro, @huxpro, 李凯的博客, Kerwin Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计"
 url: "http://kerwin1993.github.io"              # your host, for absolute URL
-baseurl: "/kerwin1993.github.com"         # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: "/kerwin1993.github.com"                             # for example, '/blog' if your blog hosted on 'host/blog'
 
-
+# Publish posts or collection documents with a future date.
+future: true
 
 # SNS settings
 RSS: false
 weibo_username:     Ssssssseize_the_day 
 zhihu_username:     kerwin
 github_username:    kerwin1993
-#twitter_username:  kerwin0451
-facebook_username:  kerwin0451
+twitter_username:   kerwin0451
+#facebook_username:  huxpro
+#linkedin_username:  firstname-lastname-idxxxx
 
 
 
@@ -25,14 +27,18 @@ facebook_username:  kerwin0451
 highlighter: rouge
 permalink: pretty
 paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+# If you have timezone issue (e.g. #68) in China, uncomment to use this:
+#timezone: CN  
 
 
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
-gems: [jekyll-paginate]
+# make sure you have this gem installed
+# `$ gem install jekyll-paginate`
+plugins: [jekyll-paginate]
 
 
 
@@ -47,19 +53,17 @@ kramdown:
 
 
 # Disqus settings
-#disqus_username: _your_disqus_short_name_
+disqus_username: kerwin
 
-# Duoshuo settings
-duoshuo_username: huxblog
-# Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
-
+# Netease settings
+netease_comment: false
 
 
 
 # Analytics settings
-# Baidu Analytics
-ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+# Baidu Analytics 
+# ba_track_id: [your track id]
+
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
 ga_domain: kerwin1993.github.io
@@ -68,8 +72,8 @@ ga_domain: kerwin1993.github.io
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "做程序员，不做码农。"
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "For the next quantum leap<br>离开世界之前，一切都是过程"
+sidebar-avatar: /img/avatar-hux-ny.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -79,22 +83,46 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 
 
 
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
 # Friends
 friends: [
     {
-        title: "Kerwin Blog",
-        href: "http://kerwin1993.github.io"
+    #     title: "Su",
+    #     href: "http://su.gallery/"
+    # },{
+        title: "乱序",
+        href: "http://mida.re/"
     },{
-        title: "Foo",
-        href: "#"
+        title: "前端外刊评论",
+        href: "http://qianduan.guru/"
     },{
-        title: "Bar",
-        href: "#"
+        title: "天镶的博客",
+        href: "http://lingyu.wang/"
     },{
-        title: "Example Friends",
-        href: "#"
+        title: "Luke 的自留地",
+        href: "http://hmqk1995.github.io"
     },{
-        title: "It helps SEO",
-        href: "#"
+        title: "Ebn's Blog",
+        href: "http://ebnbin.com/"
+    },{
+        title: "SmdCn's Blog",
+        href: "http://blog.smdcn.net"
+    },{
+        title: "David's Game",
+        href: "https://www.ruoyaowu.com/"
+    },{
+        title: "DHong Say",
+        href: "http://dhong.co"
+    },{
+        title: "尹峰以为",
+        href: "http://ingf.github.io/"
+    },{
+        title: "解旻的博客",
+        href: "http://xieminis.me/"
     }
 ]
